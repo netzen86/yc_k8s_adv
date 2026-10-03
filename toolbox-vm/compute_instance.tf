@@ -1,7 +1,7 @@
 resource "yandex_compute_instance" "toolbox" {
   platform_id = "standard-v3"
   service_account_id = data.yandex_iam_service_account.terraform-sa.id
-  name        = "toolbox"
+  name        = "yc-toolbox"
   resources {
     cores         = 2
     memory        = 4
